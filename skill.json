@@ -1,0 +1,37 @@
+{
+  "name": "genpark-perplexity-pro-search-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Perplexity AI-inspired Pro Search with multi-model council and cited answers.",
+  "author": "genpark",
+  "category": "agentic",
+  "tags": [
+    "search",
+    "research",
+    "citations",
+    "perplexity"
+  ],
+  "inputs": {
+    "query": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "string"
+    },
+    "models": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "answer": {
+      "type": "string"
+    },
+    "citations": {
+      "type": "array"
+    },
+    "model_council": {
+      "type": "array"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
